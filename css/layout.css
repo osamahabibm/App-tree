@@ -1,0 +1,274 @@
+
+.ourworksinblock{ padding-top:50px}
+
+#portfoliolist {
+	transition: all 0s ease 0s;
+	-webkit-transition: all 0s ease 0s;
+	-moz-transition: all 0s ease 0s;
+	-o-transition: all 0s ease 0s;
+	-ms-transition: all 0s ease 0s;
+}
+#portfoliolist .portfolio {
+	transition: all 0s ease 0s;
+	-webkit-transition: all 0s ease 0s;
+	-moz-transition: all 0s ease 0s;
+	-o-transition: all 0s ease 0s;
+	-ms-transition: all 0s ease 0s;
+}
+#filters {
+	padding:0;
+	list-style:none;
+	margin-bottom: 0;
+	text-align:center;
+}
+#filters li {
+    margin-bottom: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+#filters li span {
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+}
+.portfolio-wrapper {
+	overflow:hidden;
+	position: relative !important;
+}
+#filters li:first-child span {
+	font-size: 24px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 2px;
+	font-family: 'ahmed_medium';
+}
+#filters li span {
+	display: inline-block;
+	vertical-align: top;
+	width: 131px;
+	height: 69px;
+	position: relative;
+	background-color: #3b96d6;
+	border: 1px solid #1e90e0;
+	cursor: pointer;
+	z-index: 11;
+	font-family: 'ahmed_medium';
+	font-size: 16px;
+	color: #fff;
+}
+#filters li span:before, #filters li span:after, #filters li span b:before, #filters li span b:after {
+	content: "";
+	display: block;
+	width: 0;
+	border-style: solid;
+	border-color: transparent;
+	position: absolute;
+	left: 0;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span b:after {
+	border-width: 0px 65px 35px 65px;
+	border-bottom-color: #1e90e0;
+	top: -36px;
+	z-index: 1;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span b:before {
+	border-width: 35px 65px 0 65px;
+	bottom: -36px;
+	border-top-color: #1e90e0;
+	z-index: 1;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span:after {
+	border-width: 0px 65px 35px 65px;
+	border-bottom-color: #3b96d6;
+	bottom: 100%;
+	z-index: 2;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span:before {
+	border-width: 35px 65px 0 65px;
+	top: 100%;
+	border-top-color: #3b96d6;
+	z-index: 2;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li:hover span, #filters li span.active {
+	color: #3b96d6;
+	background-color: #fff;
+}
+#filters li:hover span i, #filters li span.active i{
+    color: #3b96d6;
+}
+
+
+#filters li span.active:before {
+	border-color: transparent;
+	border-top-color: #fff;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span.active:after {
+	border-color: transparent;
+	border-bottom-color: #fff;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span:hover:before {
+	border-top-color: #fff;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span:hover:after {
+	border-bottom-color: #fff;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span {
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters * {
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+#filters li span.mtagerelctronic i {
+	width: 44px;
+	height: 38px;
+	background-position: -5px -5px;
+}
+#filters li span.mawake3company i {
+	width: 51px;
+	height: 40px;
+	background-position: -59px -5px;
+}
+#filters li span.mobiletgara i {
+	width: 41px;
+	height: 39px;
+	background-position: -170px -5px;
+}
+#filters li span.tatbekmobil i {
+	width: 23px;
+	height: 38px;
+	background-position: -357px -83px;
+
+}
+#filters li span.mosh_graphic i {
+	width: 46px;
+	height: 33px;
+	background-position: -221px -5px;
+}
+#filters li span i {
+    margin: 0 auto 8px;
+    display: block;
+    font-size: 35px;
+    color:#fff;
+}
+
+#portfoliolist .portfolio {
+	width: 33.3333%;
+	float: right;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	display: none;
+}
+.thumb_work {
+}
+.thumb_work a {
+	display:block
+}
+.thumb_work a img {
+	width: 100%;
+	-o-transform: scale(1);
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	height: 240px;
+}
+.thumb_work a:hover > img, .album .al-block:hover .wk-album img {
+	-o-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.thumb_work a {
+	position:relative
+}
+.thumb_work a:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "\f002";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 30px;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    margin: auto;
+}
+.thumb_work_vid a:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	content: "\f144";
+	font: normal normal normal 14px/1 FontAwesome;
+    font-size: 43px;
+    color: #fff;
+    width: 40px;
+    height: 42px;
+    margin: auto;
+}
+
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+/*@media only screen and (max-width: 767px) {
+#portfoliolist .portfolio {
+	width:48%;
+	margin:1%;
+}
+}
+*/
+
+
+
+
+

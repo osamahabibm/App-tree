@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>statistics</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/text.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <script src="js/jquery-1.12.1.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/modernizr.custom.97074.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="website_container">
+      <div class="header">
+        <div class="inner_header">
+          <div class="rt_menuicon sidelink">
+            <a title="menu" href="#">القائمة الجانبية</a>
+          </div>
+          <!--right_menu-->
+          <div class="middle_person">
+            <h3>الإحصائيات</h3>
+          </div>
+          <!--middle_person-->
+
+          <div class="lt_sahm">
+            <a title="back" href="#"><i class="fas fa-home"></i></a>
+          </div>
+        </div>
+        <!--inner_header-->
+      </div>
+      <!--header-->
+
+      <div class="middle_content statistics">
+        <div class="in_detailpage in_detailpage_mo2lfat">
+          <div class="site_wide">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    عدد الأعمار
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="old-items">
+                      <div class="selectOne">
+                        <label for="selectone">من عمر</label>
+                        <select id="selectone">
+                          <option selected>01</option>
+                          <option value="1">02</option>
+                          <option value="2">03</option>
+                          <option value="3">04</option>
+                        </select>
+                      </div>
+
+                      <div class="selectTow">
+                        <label for="selectTow">الى عمر</label>
+                        <select id="selectTow">
+                          <option selected>01</option>
+                          <option value="1">02</option>
+                          <option value="2">03</option>
+                          <option value="3">04</option>
+                        </select>
+                      </div>
+                    </div>
+                    <form action="">
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأحياء
+                      </label>
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأموات
+                      </label>
+                      <label class="area">المكان</label>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          السعودية =
+                        </label>
+
+                        <a href="details.html">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الكويت =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="note">
+                        <div class="site_wide">
+                          <p>
+                            النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                            = 224
+                            <span class="pra"
+                              >لظهور التفاصيل اضغط على الرقم</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <input type="submit" value="ظهور النتيجة" />
+                    </form>
+                    <div class="noteTow">
+                      <div class="site_wide">
+                        <p>
+                          النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    عدد المولودين بتاريخ
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <form action="">
+                      <label class="form-control">
+                        <input type="radio" name="radiotow" />
+                        التاريخ الميلادي
+                      </label>
+                      <label class="form-control">
+                        <input type="radio" name="radiotow" />
+                        التاريخ الهجري
+                      </label>
+
+                      <div class="old-items">
+                        <div class="selectOne">
+                          <label for="selectone">من سنة</label>
+                          <select id="selectone">
+                            <option selected>01</option>
+                            <option value="1">02</option>
+                            <option value="2">03</option>
+                            <option value="3">04</option>
+                          </select>
+                        </div>
+
+                        <div class="selectTow">
+                          <label for="selectTow">الى سنة</label>
+                          <select id="selectTow">
+                            <option selected>01</option>
+                            <option value="1">02</option>
+                            <option value="2">03</option>
+                            <option value="3">04</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأحياء
+                      </label>
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأموات
+                      </label>
+                      <label class="area">المكان</label>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الدمام =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الإحساء =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الكويت =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          أماكن اخرى =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="note">
+                        <div class="site_wide">
+                          <p>
+                            النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                            = 224
+                            <span class="pra"
+                              >لظهور التفاصيل اضغط على الرقم</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <input type="submit" value="ظهور النتيجة" />
+                    </form>
+                    <div class="noteTow">
+                      <div class="site_wide">
+                        <p>حساب الاعمار بالميلادي وليس الهجري</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    عدد الأسماء
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <form action="">
+                      <input type="text" placeholder="الإسم الأول" />
+
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأحياء
+                      </label>
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأموات
+                      </label>
+                      <label class="area">المكان</label>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الكويت =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          السعودية =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="note">
+                        <div class="site_wide">
+                          <p>
+                            النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                            = 224
+                            <span class="pra"
+                              >لظهور التفاصيل اضغط على الرقم</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <input type="submit" value="ظهور النتيجة" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFor">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headingForr"
+                    aria-expanded="false"
+                    aria-controls="headingForr"
+                  >
+                    عدد المتزوج
+                  </button>
+                </h2>
+                <div
+                  id="headingForr"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFor"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="old-items">
+                      <div class="selectOne">
+                        <label for="selectone">من عمر</label>
+                        <select id="selectone">
+                          <option selected>01</option>
+                          <option value="1">02</option>
+                          <option value="2">03</option>
+                          <option value="3">04</option>
+                        </select>
+                      </div>
+
+                      <div class="selectTow">
+                        <label for="selectTow">الى عمر</label>
+                        <select id="selectTow">
+                          <option selected>01</option>
+                          <option value="1">02</option>
+                          <option value="2">03</option>
+                          <option value="3">04</option>
+                        </select>
+                      </div>
+                    </div>
+                    <form action="">
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأحياء
+                      </label>
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأموات
+                      </label>
+                      <label class="area">المكان</label>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          السعودية =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الكويت =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="note">
+                        <div class="site_wide">
+                          <p>
+                            النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                            = 224
+                            <span class="pra"
+                              >لظهور التفاصيل اضغط على الرقم</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <input type="submit" value="ظهور النتيجة" />
+                    </form>
+                    <div class="noteTow">
+                      <div class="site_wide">
+                        <p>
+                          النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headingFivee"
+                    aria-expanded="false"
+                    aria-controls="headingFivee"
+                  >
+                    عدد الأعزب
+                  </button>
+                </h2>
+                <div
+                  id="headingFivee"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <div class="old-items">
+                      <div class="selectOne">
+                        <label for="selectone">من عمر</label>
+                        <select id="selectone">
+                          <option selected>01</option>
+                          <option value="1">02</option>
+                          <option value="2">03</option>
+                          <option value="3">04</option>
+                        </select>
+                      </div>
+
+                      <div class="selectTow">
+                        <label for="selectTow">الى عمر</label>
+                        <select id="selectTow">
+                          <option selected>01</option>
+                          <option value="1">02</option>
+                          <option value="2">03</option>
+                          <option value="3">04</option>
+                        </select>
+                      </div>
+                    </div>
+                    <label class="area">المكان</label>
+                    <form action="">
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          السعودية =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الكويت =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="note">
+                        <div class="site_wide">
+                          <p>
+                            النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                            = 224
+                            <span class="pra"
+                              >لظهور التفاصيل اضغط على الرقم</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <input type="submit" value="ظهور النتيجة" />
+                    </form>
+                    <div class="noteTow">
+                      <div class="site_wide">
+                        <p>
+                          النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSex">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headingSexx"
+                    aria-expanded="false"
+                    aria-controls="headingSexx"
+                  >
+                    عدد المتواجدين في
+                  </button>
+                </h2>
+                <div
+                  id="headingSexx"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSex"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <label class="area">المكان</label>
+                    <form action="">
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          السعودية =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الكويت =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="note">
+                        <div class="site_wide">
+                          <p>
+                            النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                            = 224
+                            <span class="pra"
+                              >لظهور التفاصيل اضغط على الرقم</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <input type="submit" value="ظهور النتيجة" />
+                    </form>
+                    <div class="noteTow">
+                      <div class="site_wide">
+                        <p>
+                          النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSaveen">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headingSaveenn"
+                    aria-expanded="false"
+                    aria-controls="headingSaveenn"
+                  >
+                    عدد الذرية
+                  </button>
+                </h2>
+                <div
+                  id="headingSaveenn"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSaveen"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <form action="">
+                      <input type="number" placeholder="الرقم التسلسلي" />
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الأحياء =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الأموات =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="note">
+                        <div class="site_wide">
+                          <p>
+                            النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                            = 224
+                            <span class="pra"
+                              >لظهور التفاصيل اضغط على الرقم</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <input type="submit" value="ظهور النتيجة" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingnine">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headingninee"
+                    aria-expanded="false"
+                    aria-controls="headingninee"
+                  >
+                    عدد المولودين في
+                  </button>
+                </h2>
+                <div
+                  id="headingninee"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingnine"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <form action="">
+                      <label class="area">المكان</label>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الدمام =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الإحساء =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          الكويت =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <div class="checkboxfleX">
+                        <label class="form-control">
+                          <input type="checkbox" name="checkbox" />
+                          أماكن اخرى =
+                        </label>
+
+                        <a href="#">
+                          <span class="number">74</span>
+                          <span class="pra">لظهور التفاصيل اضغط على الرقم</span>
+                        </a>
+                      </div>
+
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأحياء
+                      </label>
+                      <label class="form-control">
+                        <input type="radio" name="radio" />
+                        الأموات
+                      </label>
+
+                      <div class="note">
+                        <div class="site_wide">
+                          <p>
+                            النتيجة الإجمالية بين السعودية والكويت احياء واموات
+                            = 224
+                            <span class="pra"
+                              >لظهور التفاصيل اضغط على الرقم</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <input type="submit" value="ظهور النتيجة" />
+                    </form>
+                    <div class="noteTow">
+                      <div class="site_wide">
+                        <p>حساب الاعمار بالميلادي وليس الهجري</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--site_wide-->
+        </div>
+        <!--in_detailpage-->
+      </div>
+      <!--middle_content-->
+
+      <div class="overlay_popup"></div>
+      <!--overlay_popup-->
+    </div>
+    <!--website_container-->
+
+    <div class="side_bar">
+      <img class="close" src="img/close.png" />
+      <div class="insidebarblog">
+        <!--logowhite-->
+        <ul class="list_side">
+          <li>
+            <a href="index_home.html">
+              <i class="fas fa-tree"></i> شجرة العائلة
+            </a>
+          </li>
+          <li>
+            <a href="Search.html"> <i class="fas fa-search"></i> بحث</a>
+          </li>
+          <li>
+            <a href="relation.html">
+              <i class="fas fa-project-diagram"></i> صلة القرابة
+            </a>
+          </li>
+          <li>
+            <a href="Suggestion.html">
+              <i class="far fa-lightbulb"></i> اقتراحات</a
+            >
+          </li>
+          <li>
+            <a href="statistics">
+              <i class="fas fa-sort-amount-up-alt"></i> الاحصائيات</a
+            >
+          </li>
+          <li>
+            <a href="EditOrAdd.html">
+              <i class="fas fa-random"></i> طلب تعديل او اضافة
+            </a>
+          </li>
+          <li>
+            <a href="instructions.html">
+              <i class="fas fa-exclamation-circle"></i> التعليمات
+            </a>
+          </li>
+          <li>
+            <a href="lastEdit.html">
+              <i class="fas fa-pencil-alt"></i> اخر التعديلات
+            </a>
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fas fa-sign-in-alt"></i> تسجيل دخول
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--insidebarblog-->
+    </div>
+    <!--side_bar-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

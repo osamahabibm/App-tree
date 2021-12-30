@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100% !important;
+	overflow: hidden !important;
+}
+
+.site_wide {
+	position: relative;
+	background: url(../img/01.png);
+	background-position: center;
+	background-size: cover;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#website_container {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}

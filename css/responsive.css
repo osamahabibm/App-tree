@@ -1,0 +1,143 @@
+@media only screen and (max-height :220px) {}
+
+
+
+@media only screen and (max-width:991px) {
+    .middle_content .site_wide {
+        width: 100%;
+    }
+
+    div#accordionExample {
+        width: 100%;
+        padding: 0 .5rem;
+    }
+}
+
+
+@media only screen and (max-width :450px) {
+    .middle_content .site_wide form {
+        width: 100%;
+        padding: 0 .5rem;
+    }
+
+    .middle_content .site_wide form input {
+        width: 100%;
+    }
+
+    .middle_content .site_wide form input[type=submit] {
+        width: 100%;
+    }
+
+    .middle_content .now-login {
+        width: 100%;
+        padding: 0 .5rem;
+    }
+
+    .middle_content .now-login .site_wide {
+        width: 100%;
+    }
+
+
+    .middle_content .note .site_wide {
+        width: 100%;
+    }
+
+    #collapseOne .old-items {
+        padding: 0 .5rem;
+    }
+
+    #headingForr .old-items {
+        padding: 0 .5rem;
+    }
+
+    #headingFivee .old-items {
+        padding: 0 .5rem;
+    }
+
+    .statistics h2 {
+        width: 100%;
+        text-align: center;
+        padding: 0 0.5rem;
+        background: #ddd;
+    }
+
+    .noteTow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        padding: 0 .5rem;
+    }
+
+    .checkboxfleX a .pra {
+
+        font-size: 13px;
+
+    }
+
+    #collapseThree input[type="text"] {
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 1rem;
+    }
+
+    #headingSaveenn input[type="number"] {
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 1rem;
+    }
+
+    #headingFivee .area {
+        padding: 0 .5rem;
+
+    }
+
+    /*  */
+    .details .site_wide .table {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-controlLogin {
+        width: 100%;
+        padding: 0 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .instructions div#accordionExample {
+        width: 100%;
+        padding: 0 .5rem;
+    }
+
+    .LastEdit-block  {
+        padding: 0 .5rem;
+        
+    }
+
+    .LastEdit-block .block-edit {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width :380px) {
+    .details .site_wide .table {
+        width: 365px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width :320px) {
+    .details .site_wide .table {
+        width: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

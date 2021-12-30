@@ -1,0 +1,1625 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'osama';
+    src: url('../fonts/Cairo-Regular.ttf');
+}
+
+body {
+    background: #e3dbda;
+    outline: 0;
+    direction: rtl;
+    font-family: 'osama';
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #99c3d8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d39024;
+}
+
+* {
+
+    outline: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+ul {
+    color: #555;
+    padding: 0
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.website_container {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-bottom: 52px;
+    -webkit-transition: -webkit-transform .5s ease;
+    -moz-transition: -moz-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.site_wide {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    padding: 15px;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 65px;
+}
+
+.inner_header {
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem 0.5rem;
+}
+
+.rt_menuicon {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.rt_menuicon a {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.lt_sahm a i {
+    color: #000000;
+    display: block;
+}
+
+.lt_sahm a i:before {
+    font-size: 31px;
+}
+
+.middle_person {
+    margin: 0;
+}
+
+.middle_person h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+
+/* Side-Bar ------------------------------------------------------------------ */
+
+.side_bar {
+    max-width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    bottom: 0;
+    background: #e5a843;
+    z-index: 9999;
+    overflow: auto;
+    width: 285px;
+    -webkit-transition: -webkit-transform .3s ease;
+    -moz-transition: -moz-transform .3s ease;
+    transition: transform .3s ease;
+    -moz-transform: translate3d(300px, 0, 0);
+    transform: translate3d(300px, 0, 0);
+}
+
+.side_show {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.close {
+    cursor: pointer;
+    margin: 11px 13px 10px;
+    float: left;
+}
+
+.list_side {
+    margin-bottom: 0;
+}
+
+.list_side li {
+    margin-left: 0;
+    list-style-type: none;
+}
+
+.list_side li a {
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 12px 13px;
+    font-size: 16px;
+    position: relative;
+    border-bottom: 1px solid rgb(216, 193, 193);
+}
+
+.fas, .far {
+    padding-left: .5rem;
+}
+
+.list_side li a:hover {
+    background: rgba(235, 230, 226, 0.9);
+    transition: .2s linear all;
+}
+
+.list_side li a.active {
+    background: rgba(235, 230, 226, 0.9);
+    pointer-events: none;
+}
+
+.insidebarblog {
+    margin: auto;
+    clear: both;
+}
+
+.logowhite {
+    margin-bottom: 10px;
+    padding: 0 13px;
+}
+
+/* Side-Bar ------------------------------------------------------------------ */
+
+
+
+
+/* Login page ------------------------------------------------------------------ */
+
+.in_detailpage {
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 15px 0;
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.middle_content .site_wide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+.in_detailpage .site_wide img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.in_detailpage .site_wide h3 {
+    font-size: 15px;
+    margin: 0;
+    margin-top: 1rem;
+    font-weight: 600;
+
+}
+
+.login .site_wide form,
+.relation .site_wide form,
+.Suggestion .site_wide form,
+.Search .site_wide form,
+.newLogin .site_wide form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5rem;
+}
+
+.login .site_wide form input,
+.relation .site_wide form input,
+.Search .site_wide form input,
+.Suggestion .site_wide form input,
+.newLogin .site_wide form input {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 400px;
+    padding: 10px 20px;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.login .site_wide form input::placeholder,
+.relation .site_wide form input::placeholder,
+.Search .site_wide form input::placeholder,
+.Suggestion .site_wide form input::placeholder,
+.newLogin .site_wide form input::placeholder {
+    font-size: 15px;
+    color: #000;
+}
+
+.login .site_wide form input[type=submit],
+.relation .site_wide form input[type=submit],
+.Search .site_wide form input[type=submit],
+.Suggestion .site_wide form input[type=submit],
+.newLogin .site_wide form input[type=submit] {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 400px;
+    padding: 10px 20px;
+    margin-bottom: 0.5rem;
+    background: #e5a843;
+    color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 15px;
+}
+
+.login .site_wide form input[type=submit]:hover,
+.relation .site_wide form input[type=submit]:hover,
+.Search .site_wide form input[type=submit]:hover,
+.Suggestion .site_wide form input[type=submit]:hover,
+.newLogin .site_wide form input[type=submit]:hover {
+    background: #d39024;
+    transition: .2s linear all;
+}
+
+.middle_content .now-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.middle_content .now-login a {
+    font-size: 15px;
+}
+
+.middle_content .now-login a:hover {
+    text-decoration: underline;
+}
+
+
+.middle_content .now-login .site_wide {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 400px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.middle_content .note {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+
+}
+
+.middle_content .note .site_wide {
+    width: 400px;
+    background: #e5a843;
+    border-radius: 20px 0 20px 20px;
+
+}
+
+.middle_content .note .site_wide p {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding: 15px;
+
+}
+
+/* Login page ------------------------------------------------------------------ */
+
+textarea {
+    resize: none;
+}
+
+
+/* OverLay ------------------------------------------------------------------ */
+
+.overlay_popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    bottom: 0;
+    top: 0;
+    display: none;
+    background: #3b3a37;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.overlay_popup_show {
+    display: block;
+}
+
+/* OverLay ------------------------------------------------------------------ */
+
+
+/* pageSearch ------------------------------------------------------------------ */
+
+.middle_content.Search {
+    position: relative;
+    top: 5rem;
+}
+
+.Search span {
+    display: block;
+    padding: 5px;
+}
+
+.Search .fa-search {
+    font-size: 40px;
+}
+
+/* pageSearch ------------------------------------------------------------------ */
+
+
+/* Pagerelation ------------------------------------------------------------------ */
+
+.relation {
+    position: relative;
+    top: 5rem;
+}
+
+.relation .fa-users {
+    font-size: 40px;
+}
+
+/* Pagerelation ------------------------------------------------------------------ */
+
+/* PageSuggestion ------------------------------------------------------------------ */
+
+
+.Suggestion .fa-book-open {
+    font-size: 40px;
+}
+
+.Suggestion textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    background-color: #ffffff;
+    font-size: 16px;
+    resize: none;
+}
+
+textarea::placeholder {
+    font-size: 15px;
+    font-weight: normal;
+    color: #000;
+}
+
+/* PageSuggestion ------------------------------------------------------------------ */
+
+
+/* Pagestatistics ------------------------------------------------------------------ */
+.statistics .accordion-button::after {
+    background: none;
+    display: none;
+}
+
+.statistics div#accordionExample {
+    width: 100%;
+}
+
+.statistics .accordion-item {
+    margin-bottom: .5rem;
+    border: none;
+}
+
+.statistics h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.accordion-body {
+    margin: 0;
+    padding: 0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #e3dbda;
+    border: none;
+}
+
+
+
+.accordion-body form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border: none;
+}
+
+.accordion-body form input[type=submit] {
+    width: 400px;
+    background: #e5a843;
+    padding: 10px 20px;
+    margin-top: 1rem;
+}
+
+.accordion-body form input[type=submit]:hover {
+    background: #d39024;
+    transition: .2s linear all;
+}
+
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.accordion-button {
+    color: #000000;
+    background: #d39024;
+    border: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fffafa;
+    background: #070605;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+}
+
+.old-items {
+    display: flex;
+}
+
+.old-items select {
+    padding: 5px 5px 6px 0;
+    width: 150px;
+    border: none;
+}
+
+.selectOne {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.selectOne label {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: .5rem;
+    text-align: start;
+}
+
+.selectTow {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.selectTow label {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: .5rem;
+    text-align: start;
+}
+
+
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1.3em auto;
+    gap: 0.5em;
+    background: #e3dbda;
+    margin: 0;
+    padding: 0;
+    margin: 1rem 0;
+    border: none;
+    width: fit-content;
+}
+
+.form-control+.form-control {
+    margin-top: 1em;
+}
+
+
+/* One */
+#collapseOne input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#collapseOne input[type="radio"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#collapseOne input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+#collapseOne input[type="radio"]:disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+}
+
+#collapseOne input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#collapseOne input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#collapseOne input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* One */
+
+.area {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 1rem;
+    display: flex;
+}
+
+#headingFivee .area {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 1rem;
+    display: flex;
+    margin: .5rem 0;
+
+}
+
+.checkboxfleX {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkboxfleX a {
+    display: flex;
+    padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkboxfleX a .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background: #e5a843;
+    color: #000;
+    font-size: 15px;
+    margin-left: .5rem;
+}
+
+.checkboxfleX a .pra {
+    display: block;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    margin-left: .5rem;
+}
+
+.accordion-body .note {
+    color: #000;
+    font-size: 14px;
+}
+
+
+.accordion-body .note span {
+    color: #000;
+    padding-left: 1rem;
+}
+
+.noteTow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.noteTow .site_wide {
+    width: 400px;
+    border-radius: 20px 0 20px 20px;
+    color: rgb(180, 22, 22);
+
+}
+
+
+/* Tow */
+#collapseTwo input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#collapseTwo input[type="radio"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#collapseTwo input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+#collapseTwo input[type="radio"]:disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+}
+
+#collapseTwo input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#collapseTwo input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#collapseTwo input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* Tow */
+
+
+/* three */
+
+#collapseThree input[type="text"] {
+    width: 400px;
+    padding: 10px 20px;
+    margin-top: 1rem;
+}
+
+#collapseThree input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#collapseThree input[type="radio"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#collapseThree input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+#collapseThree input[type="radio"]:disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+}
+
+#collapseThree input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#collapseThree input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#collapseThree input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* three */
+
+/* for */
+
+#headingForr input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#headingForr input[type="radio"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#headingForr input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+#headingForr input[type="radio"]:disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+}
+
+#headingForr input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#headingForr input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#headingForr input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* For */
+
+
+
+/*Five */
+
+#headingFivee input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#headingFivee input[type="radio"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#headingFivee input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+#headingFivee input[type="radio"]:disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+}
+
+#headingFivee input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#headingFivee input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#headingFivee input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* Five */
+
+/*six */
+
+#headingSexx input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#headingSexx input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#headingSexx input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* six */
+
+
+/*Saveenn */
+
+#headingSaveenn input[type="number"] {
+    width: 400px;
+    padding: 10px 20px;
+    margin-top: 1rem;
+}
+
+#headingSaveenn input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#headingSaveenn input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#headingSaveenn input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* ninee */
+
+#headingninee input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#headingninee input[type="radio"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#headingninee input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+#headingninee input[type="radio"]:disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+}
+
+#headingninee input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+#headingninee input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+#headingninee input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* ninee */
+
+
+/* Pagestatistics ------------------------------------------------------------------ */
+
+
+/* details ------------------------------------------------------------------ */
+.details .in_detailpage {
+    min-height: auto;
+}
+
+.details .site_wide .table {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.details .site_wide .table .table-head {
+    display: flex;
+    background: #000000;
+    width: 100%;
+    color: #ccc;
+    text-align: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+.details .site_wide .table .table-head h5 {
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .site_wide .table .table-head h5:nth-child(1) {
+    width: 150px;
+    height: 100%;
+}
+
+.details .site_wide .table .table-head h5:nth-child(2) {
+    width: 120px;
+}
+
+.details .site_wide .table .table-head h5:nth-child(3) {
+    width: 165px;
+}
+
+.details .site_wide .table .table-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: .5rem 0;
+    width: 100%;
+    height: 150px;
+}
+
+.details .site_wide .table .table-body a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: .5rem 0;
+    width: 100%;
+    height: 150px;
+}
+
+.details .site_wide .table .table-body .number {
+    width: 150px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .site_wide .table .table-body .img {
+    width: 120px;
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .site_wide .table .table-body .img img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #e5a843;
+}
+
+
+.details .site_wide .table .table-body .name {
+    width: 165px;
+    height: 100%;
+    padding-left: .2rem;
+}
+
+.details .site_wide .table .table-body .name p {
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* details ------------------------------------------------------------------ */
+
+
+/* newLogin ------------------------------------------------------------------ */
+.newLogin {
+    margin-top: 3rem;
+}
+
+.newLogin select {
+    padding: 10px 20px;
+    color: #000;
+    border: none;
+    margin-bottom: .5rem;
+}
+
+.newLogin select option {
+    color: #000;
+}
+
+.newLogin label {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: .5rem;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+    display: none;
+}
+
+.inputfile+label {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px 20px !important;
+    border-radius: 4px;
+    background: url(../img/img.png) #ffffff;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: left 0.75rem center !important;
+}
+
+
+
+.inputfile+label {
+    cursor: pointer;
+    /* "hand" cursor */
+}
+
+.inputfile:focus+label {
+    -webkit-box-shadow: #0d8bca 0px 3px 8px;
+    box-shadow: #0d8bca 0px 3px 8px;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+.form-controlLogin {
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1.3em auto;
+    gap: 0.5em;
+    margin: 0;
+    padding: 0;
+    margin: 1rem 0;
+    border: none;
+    width: 400px;
+    display: flex;
+
+}
+
+.form-controlLogin+.form-controlLogin {
+    margin-top: 1em;
+}
+
+
+
+.newLogin input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #000000;
+    /* Not removed via appearance */
+    margin: 0;
+    color: currentColor;
+    font-size: 20px;
+    width: 1.15em;
+    height: 1.15em;
+    display: grid;
+    place-content: center;
+}
+
+.newLogin input[type="checkbox"]::before {
+    content: "";
+    width: 0.80em;
+    height: 0.80em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #e5a843;
+}
+
+.newLogin input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+/* newLogin ------------------------------------------------------------------ */
+
+/* instructions ------------------------------------------------------------------ */
+
+.instructions div#accordionExample {
+    width: 100%;
+}
+
+.instructions .accordion-item {
+    border: none;
+    margin-bottom: .5rem;
+}
+
+.instructions .accordion-body {
+    background: #070605;
+    color: #fff;
+}
+
+.instructions .accordion-button::after {
+    margin-right: auto !important;
+    margin-left: unset !important;
+}
+
+.instructions .accordion-button:not(.collapsed) {
+    color: #000000;
+    background: #d39024;
+    display: flex;
+    justify-content: center;
+    border: none;
+    align-items: center;
+}
+
+/* instructions ------------------------------------------------------------------ */
+
+/* EditOrAdd ------------------------------------------------------------------ */
+
+.EditOrAdd textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 16px;
+    resize: none;
+    border: none;
+}
+
+.EditOrAdd textarea::placeholder {
+    font-size: 15px;
+    font-weight: normal;
+    color: #000;
+}
+
+.EditOrAdd select {
+    padding: 10px 20px;
+    color: #000;
+    border: none;
+    font-size: 15px;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.EditOrAdd select option {
+    color: #000;
+}
+
+.EditOrAdd input[type=submit] {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 0.5rem;
+    background: #e5a843;
+    color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 15px;
+
+}
+
+.EditOrAdd input[type=submit]:hover {
+    background: #d39024;
+    transition: .2s linear all;
+}
+
+/* EditOrAdd ------------------------------------------------------------------ */
+
+/* LastEdit-block ------------------------------------------------------------------ */
+
+.LastEdit-block {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LastEdit-block .block-edit {
+    width: 400px ;
+    height: 150px;
+    background: #ccc;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.LastEdit-block .block-edit .title-edit {
+    height: 45px;
+    width: 100%;
+    background: #d39024;
+    margin-bottom: .5rem;
+    display: flex;
+    text-align: center;
+}
+
+.LastEdit-block .block-edit .title-edit-vip {
+    height: 45px;
+    width: 100%;
+    background: #d39024;
+    margin-bottom: .5rem;
+    display: flex;
+    text-align: center;
+}
+
+.LastEdit-block .block-edit .title-edit h5 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.LastEdit-block .block-edit .img-edit {
+    background: #fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.LastEdit-block .block-edit .img-edit img {
+    width: 100px;
+    height: 100%;
+    padding: 2px;
+    border: 1px solid #e5a843;
+}
+
+.LastEdit-block .block-edit .title-edit-vip h5 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    left: 19px;
+}
+
+.LastEdit-block .block-edit .title-edit-vip p {
+    display: flex;
+    margin-right: 0.5rem;
+}
+
+.LastEdit-block .block-edit .history-edit {
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.LastEdit-block .block-edit .illustration-edit {
+    background: #fff;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.LastEdit-block .block-edit .illustration-edit p {
+    text-align: center;
+}
+
+.LastEdit-block .block-edit .nature-edit {
+    background: #fff;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.LastEdit-block .block-edit .nature-edit p {
+    text-align: center;
+}
+
+.LastEdit-block .block-edit .name-edit {
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+
+}
+
+.LastEdit-block .block-edit .number-edit {
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+/* LastEdit-block ------------------------------------------------------------------ */
