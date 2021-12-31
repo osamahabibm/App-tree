@@ -1500,10 +1500,13 @@ textarea::placeholder {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: 1rem 0;
+    border-bottom: 1px solid #d39024;
+    padding-bottom: 1.5rem;
 }
 
 .LastEdit-block .block-edit {
-    width: 400px ;
+    width: 400px;
     height: 150px;
     background: #ccc;
     margin-bottom: .5rem;
