@@ -14,12 +14,12 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    background: #99c3d8;
+    width: 5px;
+    background: #ddd;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #d39024;
+    background: #ddd;
 }
 
 * {
