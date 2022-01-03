@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Tree</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+    <link rel="stylesheet" href="css/index-2.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/text.css" media="all" />
+    <script src="js-tree/jquery-1.12.1.js"></script>
+    <!-- ActionForHowPopUp -->
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <!-- ActionForHowPopUp -->
+
+    <!--______nanoscrollerForPopUp______ -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar2.css" />
+    <!--______nanoscrollerForPopUp______ -->
+    <link rel="stylesheet" href="css-tree/jquery-ui.css" />
+    <link rel="stylesheet" href="css-tree/ol.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css-tree/jquery.orgchart.css"
+    />
+    <link rel="stylesheet" href="css-tree/custom.css" />
+
+    <!--_______input_type_file_______-->
+    <link rel="stylesheet" type="text/css" href="css/input2.css" media="all" />
+    <!--_______input_type_file_______-->
+
+    <link rel="stylesheet" type="text/css" href="css-tree/component.css" />
+
+    <link rel="stylesheet" type="text/css" href="css-tree/styles.css" />
+
+    <script src="js/modernizr.custom.97074.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" media="all" />
+    <!-- lodingScreen -->
+    <script type="text/javascript" src="js-tree/jquery.nPageLoader.js"></script>
+    <!-- lodingScreen -->
+    <script src="js-tree/script.js"></script>
+  </head>
+  <style>
+    * {
+      touch-action: manipulation;
+    }
+  </style>
+  <body>
+    <div class="website_container">
+      <div class="header">
+        <div class="inner_header">
+          <div class="rt_menuicon sidelink">
+            <a title="menu" href="#">القائمة الجانبية</a>
+          </div>
+          <!--right_menu-->
+          <div class="middle_person">
+            <h3>شجرة العائلة</h3>
+          </div>
+          <!--middle_person-->
+
+          <div class="lt_sahm">
+            <a title="back" href="#"><i class="fas fa-home"></i></a>
+          </div>
+        </div>
+        <!--inner_header-->
+      </div>
+      <!--header-->
+    </div>
+
+    <!--poptree-->
+    <div class="poptree">
+      <div class="inner_side_right_tree">
+        <img class="clos_clo" src="img/x.png" />
+        <div class="inn_height">
+          <div class="details_persons">
+            <img src="img/as.png" />
+            <ul class="list_detail">
+              <li>
+                <span>الاســــــــــــــــم:</span> وليد محمد ابراهيم الثنيان
+              </li>
+              <li><span>الـــــــــــــــــــسن:</span> 22</li>
+              <li><span>تاريخ الميلاد :</span> 22 أكتوبر 1999</li>
+              <li>
+                <span>العنـــــــــــــوان:</span> وليد محمد ابراهيم الثنيان
+              </li>
+              <li><span>رقـم الهاتف:</span> 012589746</li>
+              <li><span>المؤهـــــــــــل:</span> بكالوريوس هندسة</li>
+            </ul>
+            <div class="link-effect-1 link-effect_lin">
+              <a href="photos_tree2.html" class="reg_button2"
+                ><span data-hover="ألبوم الصور">ألبوم الصور</span></a
+              >
+            </div>
+          </div>
+          <div class="bottom_abna">
+            <h3 class="abna">الابناء</h3>
+            <ul class="list_abna">
+              <li>
+                <img src="img/abn.png" />
+                <span>محمد</span>
+              </li>
+              <li>
+                <img src="img/abn.png" />
+                <span>محمد</span>
+              </li>
+              <li>
+                <img src="img/abn.png" />
+                <span>محمد</span>
+              </li>
+              <li>
+                <img src="img/abn.png" />
+                <span>محمد</span>
+              </li>
+              <li>
+                <img src="img/abn.png" />
+                <span>محمد</span>
+              </li>
+              <li>
+                <img src="img/abn.png" />
+                <span>محمد</span>
+              </li>
+              <li>
+                <img src="img/abn.png" />
+                <span>محمد</span>
+              </li>
+              <li>
+                <img src="img/abn.png" />
+                <span>محمد</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="over_over"></div>
+    </div>
+    <!--poptree-->
+
+    <!--middle_content-->
+    <div class="middle_content_block2 middle_content_block_tree">
+      <div class="in_tree_button">
+        <span class="wide"> التفاصيل <i class="fa fa-chevron-left"></i> </span>
+      </div>
+      <!--in_tree_button-->
+
+      <div>
+        <div class="inner_tree">
+          <!-- Zoom in and Zoom out -->
+          <!-- <div id="navigator" class="nav_tree">
+              <div id="icons-set">
+                <i class="fa fa-chevron-left leftnav" aria-hidden="true"></i>
+                <i class="fa fa-chevron-right rightnav" aria-hidden="true"></i>
+                <i class="fa fa-chevron-up upnav" aria-hidden="true"></i>
+                <i class="fa fa-chevron-down downnav" aria-hidden="true"></i>
+                <i class="fa fa-home fa-5x root-parent homeicon"></i>
+              </div>
+              <div id="slider-horizontal"></div>
+            </div> -->
+          <!-- Zoom in and Zoom out -->
+
+          <!-- Family Tree Hierarchy Data List -->
+          <ul id="ul-data2" style="display: none" dir="ltr">
+            <li>
+              <div class="content">
+                <div class="head_user died_border">
+                  <img id="root" src="img/man1.jpg" />
+                </div>
+                <!--head_user-->
+                <h2>أل محمد علي</h2>
+              </div>
+
+              <!--content-->
+
+              <ul>
+                <li>
+                  <div class="content">
+                    <div class="manu none_married female_border">
+                      <img src="img/character1.jpg" />
+                    </div>
+                    <!--manu-->
+                    <h2>محمود عبد العزيز</h2>
+                  </div>
+                </li>
+                <li>
+                  <div class="content">
+                    <div class="manu married_border">
+                      <img src="img/character1.jpg" />
+                    </div>
+                    <!--manu-->
+                    <h2>محمود عبد العزيز</h2>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="content">
+                        <div class="manu children_border">
+                          <img src="img/character1.jpg" />
+                        </div>
+                        <!--manu-->
+                        <h2>محمود عبد العزيز</h2>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="content">
+                        <div class="manu">
+                          <img src="img/character1.jpg" />
+                        </div>
+                        <!--manu-->
+                        <h2>محمود عبد العزيز</h2>
+                      </div>
+                      <ul>
+                        <li>
+                          <div class="content">
+                            <div class="manu">
+                              <img src="img/character1.jpg" />
+                            </div>
+                            <!--manu-->
+                            <h2>محمود عبد العزيز</h2>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="content">
+                            <div class="manu">
+                              <img src="img/character1.jpg" />
+                            </div>
+                            <!--manu-->
+                            <h2>محمود عبد العزيز</h2>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="content">
+                    <div class="manu single_border">
+                      <img src="img/character1.jpg" />
+                    </div>
+                    <!--manu-->
+                    <h2>محمود عبد العزيز</h2>
+                  </div>
+                  <!--content-->
+                </li>
+                <li>
+                  <div class="content">
+                    <div class="manu died_border">
+                      <img src="img/character1.jpg" />
+                    </div>
+                    <!--manu-->
+                    <h2>محمود عبد العزيز</h2>
+                  </div>
+                  <!--content-->
+                  <ul>
+                    <li>
+                      <div class="content">
+                        <div class="manu">
+                          <img src="img/character1.jpg" />
+                        </div>
+                        <!--manu-->
+                        <h2>محمود عبد العزيز</h2>
+                      </div>
+                      <!--content-->
+                    </li>
+                    <li>
+                      <div class="content">
+                        <div class="manu">
+                          <img src="img/character1.jpg" />
+                        </div>
+                        <!--manu-->
+                        <h2>محمود عبد العزيز</h2>
+                      </div>
+                      <!--content-->
+                      <ul>
+                        <li>
+                          <div class="content">
+                            <div class="manu">
+                              <img src="img/character1.jpg" />
+                            </div>
+                            <!--manu-->
+                            <h2>محمود عبد العزيز</h2>
+                          </div>
+                          <!--content-->
+                        </li>
+                        <li>
+                          <div class="content">
+                            <div class="manu">
+                              <img src="img/character1.jpg" />
+                            </div>
+                            <!--manu-->
+                            <h2>محمود عبد العزيز</h2>
+                          </div>
+                          <!--content-->
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <div class="content">
+                    <div class="manu">
+                      <img src="img/character1.jpg" />
+                    </div>
+                    <!--manu-->
+                    <h2>محمود عبد العزيز</h2>
+                  </div>
+                  <!--content-->
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- /Family Tree Hierarchy Data List -->
+
+          <!-- Family Tree Container -->
+          <div class="demo-container" id="ul-datasource"></div>
+        </div>
+        <!--inner_content-->
+      </div>
+      <!--middle_containner-->
+    </div>
+    <!--middle_content-->
+
+    <div class="overlay_popup"></div>
+    <!--overlay_popup-->
+
+    <div class="side_bar">
+      <img class="close" src="img/close.png" />
+      <div class="insidebarblog">
+        <!--logowhite-->
+        <ul class="list_side">
+          <li>
+            <a href="tree.html"> <i class="fas fa-tree"></i> شجرة العائلة </a>
+          </li>
+          <li>
+            <a href="Search.html"> <i class="fas fa-search"></i> بحث</a>
+          </li>
+          <li>
+            <a href="relation.html">
+              <i class="fas fa-project-diagram"></i> صلة القرابة
+            </a>
+          </li>
+          <li>
+            <a href="Suggestion.html">
+              <i class="far fa-lightbulb"></i> اقتراحات</a
+            >
+          </li>
+          <li>
+            <a href="statistics.html">
+              <i class="fas fa-sort-amount-up-alt"></i> الاحصائيات</a
+            >
+          </li>
+          <li>
+            <a href="EditOrAdd.html">
+              <i class="fas fa-random"></i> طلب تعديل او اضافة
+            </a>
+          </li>
+          <li>
+            <a href="instructions.html">
+              <i class="fas fa-exclamation-circle"></i> التعليمات
+            </a>
+          </li>
+          <li>
+            <a href="lastEdit.html">
+              <i class="fas fa-pencil-alt"></i> اخر التعديلات
+            </a>
+          </li>
+          <li>
+            <a href="login.html">
+              <i class="fas fa-sign-in-alt"></i> تسجيل دخول
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--insidebarblog-->
+    </div>
+    <!--side_bar-->
+
+    <div class="md-overlay"></div>
+
+    <script type="text/javascript">
+      if (
+        /Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        document.getElementById("header_tree").classList.add("big_header");
+      }
+    </script>
+
+    <!--  -->
+    <script src="js-tree/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script>
+      (function ($) {
+        $(".ta3lemat_blog").mCustomScrollbar2({
+          autoHideScrollbar: true,
+          theme: "light-thin",
+        });
+        $(window).load(function () {
+          $(".inner_side_right_tree").mCustomScrollbar2({
+            autoHideScrollbar: true,
+            theme: "light-thin",
+          });
+          $(".md-content").mCustomScrollbar2({
+            autoHideScrollbar: true,
+            theme: "light-thin",
+          });
+        });
+      })(jQuery);
+    </script>
+    <!--  -->
+
+    <!-- js-tree -->
+
+    <script src="js-tree/jquery-ui.js"></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="https://unpkg.com/interactjs/dist/interact.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="https://cdn.rawgit.com/jakerella/jquery-mockjax/master/dist/jquery.mockjax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      language="javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/ol3/3.18.2/ol.js"
+    ></script>
+    <script src="js-tree/jquery.orgchart.js"></script>
+    <script src="js-tree/custom.js"></script>
+
+    <!-- js-tree -->
+
+    <!--  -->
+    <script src="js-tree/classie.js"></script>
+    <script src="js-tree/modalEffects.js"></script>
+    <!--  -->
+    <script src="input-js/jquery.slides.min.js"></script>
+    <script src="input-js/jquery.selectbox.js"></script>
+    <script src="input-js/superfish.js"></script>
+    <script src="input-js/script.js"></script>
+    <!--  -->
+    <script src="js-tree/index2.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

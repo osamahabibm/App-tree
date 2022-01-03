@@ -1,0 +1,100 @@
+/* basic scrollbar styling */
+/* vertical scrollbar */
+.content_toltip {
+    width: 100%;
+    height: 180px;
+    overflow: auto;
+
+}
+
+.container_table .table tr td div.mCSB_container {
+    padding: 0px 10px;
+}
+
+
+.mCSB_container {
+    width: auto;
+    overflow: hidden;
+}
+
+.md-content .mCustomScrollBox {
+    overflow: inherit !important
+}
+
+.md-content .mCSB_container {
+    width: auto;
+    overflow: inherit;
+}
+
+.mCSB_container.mCS_no_scrollbar {
+    margin-right: 0;
+}
+
+.mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar {
+    margin-right: 30px;
+}
+
+.mCustomScrollBox>.mCSB_scrollTools {
+    width: 10px;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    background: #e0c987;
+}
+
+.mCSB_scrollTools a+.mCSB_draggerContainer {
+    margin: 20px 0;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    width: 20px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    background: #c90;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 20px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mCSB_scrollTools .mCSB_buttonUp,
+.mCSB_scrollTools .mCSB_buttonDown {
+    display: block;
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.mCSB_scrollTools .mCSB_buttonDown {
+    top: 100%;
+    margin-top: -40px;
+}
+
+/* horizontal scrollbar */
+
+
+.center_middle .mCSB_container {
+    right: 3px;
+}

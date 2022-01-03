@@ -1,0 +1,134 @@
+#modal {
+    visibility: hidden;
+    max-width: 315px;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    margin-top: -107px !important;
+    margin-left: -140px !important;
+    z-index: 101;
+    text-align: center;
+    background: #f7f6f1;
+    text-shadow: none;
+    transition: all 0s ease 0s;
+    -webkit-transition: all 0s ease 0s;
+    -moz-transition: all 0s ease 0s;
+    -o-transition: all 0s ease 0s;
+    -ms-transition: all 0s ease 0s;
+    border: 1px solid rgba(120, 131, 141, 0.28);
+    padding: 25px;
+}
+
+.heading {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+
+.heading h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #333;
+    margin-top: 0;
+    font-family: "DIN Next LT Arabic";
+    font-weight: normal;
+}
+
+.heading p {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.list_pops {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+
+.list_pops li {
+    margin-left: 0;
+    float: none;
+    display: inline-block;
+}
+
+
+
+.list_pops li a {
+    background: #333;
+    color: #fff;
+    display: block;
+    line-height: 32px;
+    border-radius: 5px;
+    height: 37px;
+    font-size: 15px;
+    padding: 0 10px;
+    min-width: 74px;
+    font-family: "DIN Next LT Arabic";
+    margin: 5px 15px;
+}
+
+
+.list_pops li:last-child a {
+    border-bottom: 0
+}
+
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, .4);
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+#modal * {
+
+    transition: all 0s ease 0s !important;
+    -webkit-transition: all 0s ease 0s !important;
+    -moz-transition: all 0s ease 0s !important;
+    -o-transition: all 0s ease 0s !important;
+    -ms-transition: all 0s ease 0s !important;
+
+}
+
+
+#modal, .reveal-modal-bg {
+
+    transition: all 0s ease 0s !important;
+    -webkit-transition: all 0s ease 0s !important;
+    -moz-transition: all 0s ease 0s !important;
+    -o-transition: all 0s ease 0s !important;
+    -ms-transition: all 0s ease 0s !important;
+
+}
+
+
+.reveal-modal-bg * {
+
+    transition: all 0s ease 0s !important;
+    -webkit-transition: all 0s ease 0s !important;
+    -moz-transition: all 0s ease 0s !important;
+    -o-transition: all 0s ease 0s !important;
+    -ms-transition: all 0s ease 0s !important;
+
+}
+
+.clossse {
+    position: absolute;
+    background: url(../img/fancybox_sprite.png) no-repeat;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    cursor: pointer
+}
