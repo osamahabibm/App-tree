@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/index-2.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/text.css" media="all" />
+    <link rel="stylesheet" href="css/popup.css" />
     <script src="js-tree/jquery-1.12.1.js"></script>
     <!-- ActionForHowPopUp -->
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
@@ -62,9 +63,7 @@
             <a title="menu" href="#">القائمة الجانبية</a>
           </div>
           <!--right_menu-->
-          <div class="middle_person">
-            <h3>شجرة العائلة</h3>
-          </div>
+          <div class="middle_person"></div>
           <!--middle_person-->
 
           <div class="lt_sahm">
@@ -76,7 +75,6 @@
       <!--header-->
     </div>
 
-    <!--poptree-->
     <div class="poptree">
       <div class="inner_side_right_tree">
         <img class="clos_clo" src="img/x.png" />
@@ -143,27 +141,25 @@
       <div class="over_over"></div>
     </div>
     <!--poptree-->
-
     <!--middle_content-->
     <div class="middle_content_block2 middle_content_block_tree">
       <div class="in_tree_button">
         <span class="wide"> التفاصيل <i class="fa fa-chevron-left"></i> </span>
       </div>
       <!--in_tree_button-->
-
       <div>
         <div class="inner_tree">
           <!-- Zoom in and Zoom out -->
           <!-- <div id="navigator" class="nav_tree">
-              <div id="icons-set">
-                <i class="fa fa-chevron-left leftnav" aria-hidden="true"></i>
-                <i class="fa fa-chevron-right rightnav" aria-hidden="true"></i>
-                <i class="fa fa-chevron-up upnav" aria-hidden="true"></i>
-                <i class="fa fa-chevron-down downnav" aria-hidden="true"></i>
-                <i class="fa fa-home fa-5x root-parent homeicon"></i>
-              </div>
-              <div id="slider-horizontal"></div>
-            </div> -->
+            <div id="icons-set">
+              <i class="fa fa-chevron-left leftnav" aria-hidden="true"></i>
+              <i class="fa fa-chevron-right rightnav" aria-hidden="true"></i>
+              <i class="fa fa-chevron-up upnav" aria-hidden="true"></i>
+              <i class="fa fa-chevron-down downnav" aria-hidden="true"></i>
+              <i class="fa fa-home fa-5x root-parent homeicon"></i>
+            </div>
+            <div id="slider-horizontal"></div>
+          </div> -->
           <!-- Zoom in and Zoom out -->
 
           <!-- Family Tree Hierarchy Data List -->
@@ -174,7 +170,9 @@
                   <img id="root" src="img/man1.jpg" />
                 </div>
                 <!--head_user-->
-                <h2>أل محمد علي</h2>
+                <div>
+                  <h2>أل محمد علي</h2>
+                </div>
               </div>
 
               <!--content-->
@@ -195,7 +193,13 @@
                       <img src="img/character1.jpg" />
                     </div>
                     <!--manu-->
-                    <h2>محمود عبد العزيز</h2>
+                    <div
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#myModal"
+                    >
+                      <h2>محمود عبد العزيز</h2>
+                    </div>
                   </div>
                   <ul>
                     <li>
@@ -382,6 +386,9 @@
     <!--side_bar-->
 
     <div class="md-overlay"></div>
+    <script src="js-tree/preelong.js"></script>
+    <script src="js-tree/ajaxPop.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
       if (
@@ -389,30 +396,10 @@
           navigator.userAgent
         )
       ) {
-        document.getElementById("header_tree").classList.add("big_header");
+        document.getElementById("header_tree").ClassList.add("big_header");
       }
     </script>
 
-    <!--  -->
-    <script src="js-tree/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script>
-      (function ($) {
-        $(".ta3lemat_blog").mCustomScrollbar2({
-          autoHideScrollbar: true,
-          theme: "light-thin",
-        });
-        $(window).load(function () {
-          $(".inner_side_right_tree").mCustomScrollbar2({
-            autoHideScrollbar: true,
-            theme: "light-thin",
-          });
-          $(".md-content").mCustomScrollbar2({
-            autoHideScrollbar: true,
-            theme: "light-thin",
-          });
-        });
-      })(jQuery);
-    </script>
     <!--  -->
 
     <!-- js-tree -->

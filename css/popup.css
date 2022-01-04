@@ -1,0 +1,362 @@
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear
+}
+
+.fade.in {
+    opacity: 1
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2
+}
+
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+button.close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+}
+
+.modal-open {
+    overflow: hidden
+}
+
+.modal {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out, -o-transform .3s ease-out
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    outline: 0
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000
+}
+
+.modal-backdrop.fade {
+    filter: alpha(opacity=0);
+    opacity: 0
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.modal-header .close {
+    margin-top: -2px
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px
+}
+
+.modal-footer {
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    background: #0d8bca;
+    padding: 0;
+    margin: 0;
+
+}
+
+.modal-footer button {
+    height: 40px !important;
+    width: 100% !important;
+    text-align: center;
+    color: #fff;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.modal-footer button:hover {
+    background: #f44336;
+    color: #fff;
+    border-radius: 0px !important;
+}
+
+.modal-footer .btn+.btn {
+    margin-bottom: 0;
+    margin-left: 5px
+}
+
+.modal-footer .btn-group .btn+.btn {
+    margin-left: -1px
+}
+
+.modal-footer .btn-block+.btn-block {
+    margin-left: 0
+}
+
+.modal-scrollbar-measure {
+    position: absolute;
+    top: -9999px;
+    width: 50px;
+    height: 50px;
+    overflow: scroll
+}
+
+@media (max-width:450px) {
+    .star {
+        position: absolute;
+        top: -5px;
+        left: 37% !important;
+
+    }
+}
+
+@media (max-width:390px) {
+    .star {
+        position: absolute;
+        top: -5px;
+        left: 35% !important;
+
+    }
+}
+
+@media (min-width:768px) {
+    .modal-dialog {
+        width: 600px;
+        margin: 30px auto
+    }
+
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
+
+    .modal-sm {
+        width: 300px
+    }
+}
+
+@media (min-width:992px) {
+    .modal-lg {
+        width: 900px
+    }
+}
+
+/* ******************** */
+
+.modal-body img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.modal-body .row div {
+    margin: 0;
+}
+
+.modal-body .show-links {
+    width: 100%;
+    padding: 10px;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    margin: 0.5rem 0;
+    background: #0d8bca;
+    border-radius: 5px;
+}
+
+.modal-body .show-links .like {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.modal-body .show-links span {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+.modal-body .show-links .like a {
+    color: rgb(255, 255, 255);
+}
+
+.modal-body .show-links .like .likee {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.modal-body .show-links .like .heart i.fa-heart {
+    color: #f44336;
+}
+
+.modal-body .show-links .like .heart {
+    animation: heart 0.5s linear;
+}
+
+@keyframes heart {
+    0% {
+        transform: rotate(0deg) scale(1.7);
+    }
+
+    40% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    41% {
+        transform: rotate(360deg) scale(1.7);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.modal-body .show-links .like #times {
+    color: #fff;
+}
+
+.modal-body .show-links .like .pa {
+    color: #fff;
+}
+
+.fa-eye {
+    padding-left: 1rem;
+    color: #fff !important;
+}
+
+.modal-body .article {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.vip {
+    border: 5px solid #ffc902;
+
+}
+
+.star {
+    position: absolute;
+    top: -5px;
+    left: 40%;
+    color: #ffc902;
+    font-size: 2rem;
+    z-index: 1;
+}
+
+.star i:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.star i:nth-child(2) {
+    font-size: 2rem;
+}
+
+.star i:nth-child(3) {
+    font-size: 1.5rem;
+}

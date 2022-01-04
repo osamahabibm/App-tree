@@ -1053,7 +1053,7 @@
         this.buildHierarchy($nodeChart.closest('.orgchart'), nodeData, 0, opts, function() {
           if (++nodeCount === siblingCount) {
             that.complementLine($nodeChart.next().children('tr:last')
-              .children().eq(insertPostion).after($('<td colspan="5">')
+              .children().eq(insertPostion).after($('<td colspan="2">')
               .append($nodeChart)), siblingCount, 1);
             $nodeChart.closest('tr').siblings().eq(0).addClass('hidden').find('.node').addClass('slide-down');
             $nodeChart.parent().siblings().addClass('hidden')
