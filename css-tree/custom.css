@@ -19,6 +19,15 @@
      z-index: 9999;
  }
 
+ i.fa.fa-home.fa-3x.root-parent.homeicon {
+     position: relative;
+     bottom: -25px;
+     top: -7px;
+     left: 11px;
+     padding-right: -25px;
+     color: #000;
+ }
+
  #headline {
      background-color: rgba(0, 0, 0, 0.5);
      text-align: center;
@@ -518,27 +527,27 @@
 
  .female_border {
      box-shadow: 0px 0px 0 3.3px #ff1b1b;
-  
+
  }
 
  .married_border {
      box-shadow: 0px 0px 0 3.3px #0563ad;
-    
+
  }
 
  .single_border {
      box-shadow: 0px 0px 0 3.3px #825800;
- 
+
  }
 
  .children_border {
      box-shadow: 0px 0px 0 3.3px #FFB848;
-     
+
  }
 
  .died_border {
      box-shadow: 0px 0px 0 3.3px #000;
-   
+
  }
 
 

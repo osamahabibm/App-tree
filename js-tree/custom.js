@@ -397,13 +397,13 @@ function gestureEnd(e) {
         
         var transdataY;
         if(yTransform === 2) {
-            transdataY = 220;
+            transdataY = 300;
         }
         else if(yTransform < 2 && yTransform > 1.1) {
-            transdataY = 150;
+            transdataY = 200;
         }
         else {
-            transdataY = 100;
+            transdataY = 150;
         }
         
         var bodyWidth = $(window).width();
