@@ -99,30 +99,7 @@
       </div>
       <!--site_wide-->
     </div>
-    <!-- <div class="slider-text">
-      <div class="horizontal-scroll">
-        <button class="btn-scroll" id="btn-left">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="btn-scroll" id="btn-right">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-        <div class="text_container">
-          <div class="text_hor">
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار الشجرة</a>
-            <a href="#">اخبار gff</a>
-          </div>
-        </div>
-      </div>
-    </div> -->
+
     <div class="scrollmenu">
       <a href="#home">اخبار الشجرة اليويمة</a>
       <a href="#home">اخبار الشجرة اليويمة</a>
@@ -451,7 +428,7 @@
     <!--overlay_popup-->
 
     <div class="side_bar">
-      <img class="close" src="img/close.png" />
+      <i class="close fas fa-times"></i>
       <div class="insidebarblog">
         <!--logowhite-->
         <ul class="list_side">
@@ -504,18 +481,7 @@
 
     <div class="md-overlay"></div>
 
-    <script>
-      let currentscrollposition = 0;
-      let scrollAmount = 320;
-      const sCont = document.querySelector(".text_container");
-      const hScroll = document.querySelector(".horizontal-scroll");
-      let maxScroll = -sCont.offsetwidth + hScroll.offsetwidth;
-
-      function scrollhorizontally(val) {
-        currentscrollposition += (val * scrollAmount);
-        sCont.style.left = currentscrollposition + "px";
-      }
-    </script>
+   
 
     <!-- <script>
       document.querySelectorAll(".demo-container .content").forEach((manu) => {
