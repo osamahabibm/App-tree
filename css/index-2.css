@@ -86,15 +86,6 @@ a {
     float: left
 }
 
-.header {
-    background: url(../img/battern_header.jpg) repeat center center;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 195px;
-    position: relative;
-    margin-bottom: 10px;
-}
 
 .logo {
     text-align: center;
@@ -3715,10 +3706,7 @@ button#next {
     display: block;
 }
 
-.inn_height {
-    height: 100%;
-    min-height: 100%;
-}
+
 
 .inner_side_right * {
     font-family: "DIN Next LT Arabic";
@@ -7138,10 +7126,7 @@ textarea.area_big01:focus::-o-input-placeholder {
     -ms-transition: all 0s ease 0s;
 }
 
-.inn_height {
-    height: 100%;
-    min-height: 100%;
-}
+
 
 .inner_side_right * {
     font-family: "DIN Next LT Arabic";
@@ -7230,87 +7215,6 @@ textarea.area_big01:focus::-o-input-placeholder {
 }
 */
 
-
-.close_img img {
-    cursor: pointer
-}
-
-
-.details_persons img {
-    width: 100%;
-    height: 300px;
-}
-
-.list_detail {
-    padding: 20px;
-    margin: 0;
-    color: #fff;
-    list-style-type: none;
-    font-family: "DIN Next LT Arabic";
-}
-
-.list_detail li {
-    font-family: "DIN Next LT Arabic";
-    line-height: 40px;
-    font-size: 17px;
-}
-
-.list_detail li span {
-    color: #d59633
-}
-
-.bottom_abna {
-    padding: 0 10px;
-}
-
-.bottom_abna h3 {
-    margin: 0;
-    color: #fff;
-    font-weight: normal;
-    font-size: 23px;
-    padding-right: 30px;
-    background: url(../images/ico.png) no-repeat right center;
-    margin-bottom: 15px;
-}
-
-.list_abna {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.list_abna li {
-    display: inline-block;
-    width: 100px;
-    margin: 5px;
-    vertical-align: top;
-}
-
-.list_abna li img {
-    width: 100%;
-    height: 100px;
-    border-radius: 100%;
-    -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -o-border-radius: 100%;
-}
-
-.list_abna li span {
-    display: block;
-    color: #fff;
-    height: 32px;
-    overflow: hidden;
-}
-
-.clos_clo {
-    margin: 10px;
-    position: fixed;
-    z-index: 99999;
-    cursor: pointer;
-    width: 35px;
-    background: #dc9d36;
-    right: 0;
-}
 
 
 /*______________ Start Section Album Photo ______________*/
@@ -8153,100 +8057,6 @@ in_monasbat_block_new .thumb_image h3 {
 
 
 
-
-
-
-.poptree {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 999999999;
-    visibility: hidden;
-    opacity: 0;
-    text-align: right;
-    left: 0;
-    margin: auto;
-    width: 100%;
-}
-
-
-.poptree * {
-    transition: all 0s ease 0s;
-    -webkit-transition: all 0s ease 0s;
-    -moz-transition: all 0s ease 0s;
-    -o-transition: all 0s ease 0s;
-    -ms-transition: all 0s ease 0s;
-}
-
-.poptreeshow {
-    visibility: visible;
-    opacity: 1;
-}
-
-.poptree .inner_side_right {
-    padding: 0;
-}
-
-.over_over {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    top: 0;
-    left: 0;
-    z-index: 999999999;
-    opacity: 0;
-    background: rgba(29, 29, 29, 0.74);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-.over_over_show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.inner_side_right_tree {
-    max-height: 95%;
-    background: #333;
-    margin: auto;
-    position: absolute;
-    width: 100%;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    overflow: auto;
-    max-width: 650px;
-    min-width: 320px;
-    z-index: 99999999999999;
-    text-align: center;
-    border-radius: 15px;
-}
-
-.inner_side_right_tree * {
-    font-family: "DIN Next LT Arabic";
-}
-
-.inner_side_right_tree .details_persons img {
-    width: 300px;
-    height: 260px;
-}
-
-.inner_side_right_tree .link-effect_lin {
-    text-align: center;
-}
-
-.inner_side_right_tree .inn_height {
-    height: auto;
-    min-height: auto;
-    padding: 10px;
-}
 
 
 

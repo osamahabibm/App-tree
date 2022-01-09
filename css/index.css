@@ -64,7 +64,6 @@ a:hover {
     width: 960px;
     margin: 0 auto;
     position: relative;
-    padding: 15px;
 }
 
 .header {
@@ -500,7 +499,7 @@ textarea::placeholder {
 }
 
 
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+.statistics [type=button]:not(:disabled), .statistics [type=reset]:not(:disabled), .statistics [type=submit]:not(:disabled), .statistics button:not(:disabled) {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -519,7 +518,7 @@ textarea::placeholder {
     border: none;
 }
 
-.accordion-button:not(.collapsed) {
+.statistics .accordion-button:not(.collapsed) {
     color: #fffafa;
     background: #070605;
     display: flex;
@@ -1625,3 +1624,179 @@ textarea::placeholder {
 }
 
 /* LastEdit-block ------------------------------------------------------------------ */
+
+/* 
+tree
+*/
+
+.in_detailpagee .site_wide .image-header {
+    width: 100%;
+}
+
+.in_detailpagee .site_wide .image-header img {
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    position: relative;
+    top: 17px;
+}
+
+.in_detailpagee .site_wide .imge-wel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 27px;
+    background: #e5a843;
+    position: relative;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: rgb(0 0 0) 0px 1px 3px, rgb(0 0 0 / 58%) 0px 1px;
+}
+
+.in_detailpagee .site_wide .imge-wel h3 {
+    font-weight: 600;
+    font-size: 10px;
+    color: #000;
+    position: relative;
+    top: 15px;
+    padding-right: .7rem;
+}
+
+.in_detailpagee .site_wide .imge-wel p {
+    font-weight: 600;
+    font-size: 10px;
+    color: #000;
+    position: relative;
+    top: 15px;
+    padding-left: .7rem;
+}
+
+.in_detailpagee .site_wide .imge-wel img {
+    width: 96px;
+    object-fit: cover;
+    position: relative;
+    bottom: 26px;
+    z-index: 1;
+    right: 50px;
+}
+
+
+.slider-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(158, 141, 141);
+}
+
+.horizontal-scroll {
+    width: 600px;
+    height: 80px;
+    background: url(../img/battern_header.jpg);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-scroll {
+    background: rgb(228, 218, 218);
+    color: #999;
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 50%;
+    margin: 0 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+.text_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+
+.text_hor {
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_hor a {
+    font-size: 11px;
+    padding: 10px;
+    display: block;
+    width: 100px;
+    color: #fff;
+}
+
+div.scrollmenu {
+    background: url(../img/battern_header.jpg);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+
+@media (max-width:991px) {
+    .in_detailpagee .site_wide {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:768px) {
+    .in_detailpagee .site_wide .image-header {
+        width: 100%;
+    }
+
+    .in_detailpagee .site_wide {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width:450px) {
+
+    .in_detailpagee .site_wide .imge-wel img {
+
+        width: 80px;
+        object-fit: cover;
+        position: relative;
+        bottom: 19px;
+        right: 28px;
+
+    }
+
+}
+
+@media (max-width:321px) {
+
+    .in_detailpagee .site_wide .imge-wel img {
+        width: 80px;
+        object-fit: cover;
+        position: relative;
+        bottom: 19px;
+        right: 19px;
+    }
+
+}
