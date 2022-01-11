@@ -233,17 +233,7 @@ $(function () {
 //	    $(".side_right_pop").addClass('left_pop2');
 //	});
 	
-	
-    $(".wide").click(function () {
-	    $(".side_right_pop").addClass('left_pop');
-	    $(".poptree").addClass('poptreeshow');
-	    $(".over_over").addClass('over_over_show');
-	    $(this).fadeOut();
-		
-	    $(".demo-container").fadeOut();
-	    $("body").css('overflow','hidden');
-	});
-	
+
     $(".clos_clo").click(function () {
 	    $(".side_right_pop").removeClass('left_pop');
 	    $(".poptree").removeClass('poptreeshow');

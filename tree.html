@@ -48,6 +48,11 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/animate.css" type="text/css" media="all" />
     <script type="text/javascript" src="js/jquery.nPageLoader.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="js-tree/script.js"></script>
   </head>
   <style>
@@ -67,11 +72,7 @@
           <!--middle_person-->
 
           <div class="lt_sahm">
-            <div id="navigator" class="nav_tree">
-              <div id="icons-set">
-                <i class="fa fa-home fa-3x root-parent homeicon"></i>
-              </div>
-            </div>
+            <a title="back" href="#"><i class="fas fa-home homeicon"></i></a>
           </div>
         </div>
         <!--inner_header-->
@@ -88,27 +89,30 @@
           <img src="img/2222.png" alt="" />
           <p>السبت 14 محرم 1439هج 3:37 م</p>
         </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+            <div class="swiper-slide">اخبار الدولة</div>
+            <div class="swiper-slide">اخبار الحكومة</div>
+            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+          </div>
+        </div>
+        <div class="in_tree_button">
+          <h2 class="wide longtouch1" data-long-press-delay="500">
+            <img src="img/man1.jpg" alt="" /> مولود جديد
+          </h2>
+        </div>
+        <!--in_tree_button-->
       </div>
       <!--site_wide-->
     </div>
 
-    <div class="scrollmenu">
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#home">اخبار الشجرة اليويمة</a>
-      <a href="#more">More</a>
-      <a href="#logo">Logo</a>
-      <a href="#friends">Friends</a>
-      <a href="#partners">Partners</a>
-      <a href="#people">People</a>
-      <a href="#work">Work</a>
-    </div>
     <div class="poptree">
       <div class="inner_side_right_tree">
         <i class="clos_clo fas fa-times"></i>
@@ -422,7 +426,10 @@
     <!--overlay_popup-->
 
     <div class="side_bar">
-      <i class="close fas fa-times"></i>
+      <div class="close-nave">
+        <i class="close fas fa-times"></i>
+      </div>
+
       <div class="insidebarblog">
         <!--logowhite-->
         <ul class="list_side">
@@ -482,6 +489,25 @@
         };
       });
     </script> -->
+
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <script src="js-tree/preelong.js"></script>
     <script src="js-tree/ajaxPop.js"></script>
@@ -566,6 +592,7 @@
         });
       };
     </script>
+    <script></script>
     <!-- <script>
       const buttons = document.querySelectorAll(".manun");
       const overlay = document.querySelector(".overlay");
@@ -581,5 +608,6 @@
       buttons.forEach((li) => li.addEventListener("click", open));
       overlay.addEventListener("click", close);
     </script> -->
+    <script src="js-tree/long.js"></script>
   </body>
 </html>
