@@ -1471,6 +1471,8 @@ textarea::placeholder {
     font-size: 15px;
     margin-bottom: .5rem;
     width: 100%;
+        z-index: 4;
+    background: #fff;
 }
 
 .EditOrAdd select option {
