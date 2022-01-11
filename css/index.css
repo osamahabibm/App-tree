@@ -412,7 +412,7 @@ textarea {
 
 .middle_content.Search {
     position: relative;
-    top: 5rem;
+
 }
 
 .Search span {
@@ -431,7 +431,6 @@ textarea {
 
 .relation {
     position: relative;
-    top: 5rem;
 }
 
 .relation .fa-users {
@@ -532,7 +531,7 @@ textarea::placeholder {
 
 .accordion-button {
     color: #000000;
-    background: #d39024;
+    background: #e5a843;
     border: none;
 }
 
@@ -588,10 +587,11 @@ textarea::placeholder {
 
 
 .form-control {
-    font-family: system-ui, sans-serif;
-    font-size: 1rem;
+    font-family: 'osama';
+    font-size: 13px;
+    font-weight: 700;
     display: grid;
-    grid-template-columns: 1.3em auto;
+    grid-template-columns: 1.5em auto;
     gap: 0.5em;
     background: #e3dbda;
     margin: 0;
@@ -1312,9 +1312,7 @@ textarea::placeholder {
 
 
 /* newLogin ------------------------------------------------------------------ */
-.newLogin {
-    margin-top: 3rem;
-}
+
 
 .newLogin select {
     padding: 10px 20px;
@@ -1441,6 +1439,10 @@ textarea::placeholder {
     color: #fff;
 }
 
+.instructions .accordion-body p {
+    padding: 0 0.5rem;
+}
+
 .instructions .accordion-button::after {
     margin-right: auto !important;
     margin-left: unset !important;
@@ -1508,6 +1510,7 @@ textarea::placeholder {
     cursor: pointer;
     margin-top: 1rem;
     font-size: 15px;
+    font-family: 'osama';
 
 }
 

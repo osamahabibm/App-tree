@@ -15,6 +15,14 @@
 
 
 @media only screen and (max-width :450px) {
+    .middle_content .note {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
     .middle_content .site_wide form {
         width: 100%;
         padding: 0 .5rem;
@@ -112,10 +120,10 @@
         padding: 0 .5rem;
     }
 
-    .LastEdit-block  {
-      padding-left: .5rem;
-      padding-right: .5rem;
-        
+    .LastEdit-block {
+        padding-left: .5rem;
+        padding-right: .5rem;
+
     }
 
     .LastEdit-block .block-edit {
