@@ -549,8 +549,6 @@ textarea::placeholder {
     padding: 5px 5px 6px 0;
     width: 150px;
     border: none;
-        z-index: 4;
-    background: #fff;
 }
 
 .selectOne {
@@ -1473,7 +1471,7 @@ textarea::placeholder {
     font-size: 15px;
     margin-bottom: .5rem;
     width: 100%;
-        z-index: 4;
+    z-index: 4;
     background: #fff;
 }
 

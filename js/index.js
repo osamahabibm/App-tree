@@ -109,27 +109,4 @@
                 });
             });
 
-            $(document).ready(function() {
-              var owl = $('.owl-carousel');
-              owl.owlCarousel({
-                rtl: true,
-                margin: 0,
-                nav: true,
-                loop: true,
-				lazyLoad : true,
-				autoplay:true,
-				dots: false,
-				autoplayTimeout:5000,
-				smartSpeed:1100,
-				autoplayHoverPause:true,
-                responsive: {
-                  0: {
-                    items: 1
-                  },
-                  2000: {
-                    items: 1
-                  }
-                 }
-              })
-            })
 		
