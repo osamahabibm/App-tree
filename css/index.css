@@ -557,6 +557,7 @@ textarea::placeholder {
     padding: 5px 5px 6px 0;
     width: 150px;
     border: none;
+     background: #fff;
 }
 
 .selectOne {
