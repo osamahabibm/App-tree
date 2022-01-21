@@ -1,7 +1,7 @@
 var pageLoader = $.nPageLoader;
 pageLoader.init({
     // 속도체크용 이미지 url
-    url : 'images/sequence/img_0001.jpg',
+    url : 'img/sequence/img_0001.jpg',
     // 속도체크용 이미지 용량 kb
     urlSize : 83,
     // 실제 문서 예상 용량 kb

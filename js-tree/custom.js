@@ -77,7 +77,7 @@ $(function () {
     
     $('.title').on('touchstart', function(event) {
         var userAgent = window.navigator.userAgent;
-        if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+        if (userAgent.match(/Android/i) || userAgent.match(/Android/i)) {
 			
 			$(".wide").fadeIn();
 
@@ -85,7 +85,7 @@ $(function () {
     });
     $('.edge').on('touchstart', function(event) {
         var userAgent = window.navigator.userAgent;
-        if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+        if (userAgent.match(/Android/i) || userAgent.match(/Android/i)) {
 			
 			$(".wide").fadeIn();
 
@@ -99,9 +99,9 @@ $('.edge').on('touchstart', function() {
     if(touchtime == 0) {
         touchtime = new Date().getTime();
     } else {
-        if(((new Date().getTime())-touchtime) < 800) {
+        if(((new Date().getTime())-touchtime) < 1000) {
 
-        if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i)) {
+        if (userAgent.match(/Android/i) || userAgent.match(/Android/i)) {
 			
             var opened = $(this).hasClass("opened");
             if (typeof opened !== typeof undefined && opened !== false) {
@@ -221,41 +221,8 @@ function gestureEnd(e) {
 				$(".wide").fadeIn();
 			   });
 
-//    $('.edge').hover(
-//       function () {
-//           if($(".orgchart").attr("xTransform") > 0.6) {
-//             $(this).parent().find('.tooltip').addClass('s_show');
-//           }
-//       },
-//       function () {
-//            $(this).parent().find('.tooltip').removeClass('s_show');
-//       }
-//    );
-//    $('.title').hover(
-//       function () {
-//             $(this).parent().find('.tooltip').addClass('s_show');
-//       },
-//       function () {
-//            $(this).parent().find('.tooltip').removeClass('s_show');
-//       }
-//    );
 
-    $('.edge').hover(
-       function () {
-             $(this).parent().find('.tooltip').addClass('s_show');
-       },
-       function () {
-            $(this).parent().find('.tooltip').removeClass('s_show');
-       }
-    );
-    $('.title').hover(
-       function () {
-             $(this).parent().find('.tooltip').addClass('s_show');
-       },
-       function () {
-            $(this).parent().find('.tooltip').removeClass('s_show');
-       }
-    );
+
 
 
 

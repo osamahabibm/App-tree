@@ -376,14 +376,14 @@ div.box {
 .view-details a:hover {
     opacity: 0.6;
     -moz-opacity: 0.6;
-    filter: alpha(opacity=60) -o-transition:opacity 1s;
+    filter: alpha(opacity=60) -o-transition-opacity 1s;
     -moz-transition: opacity 1s;
     -webkit-transition: opacity 1s;
     transition: opacity 1s;
 }
 
 
-}
+
 
 #pagenation {
 
@@ -583,15 +583,6 @@ a.selectbox:hover {
     border-color: #fff;
 }
 
-.selectbox-dropdown.selectbox-menuShowing {
-    /*-moz-border-radius-bottomleft:0;
-	-moz-border-radius-bottomright:0;
-	-webkit-border-bottom-left-radius:0;
-	-webkit-border-bottom-right-radius:0;
-	border-bottom-left-radius:0;
-	border-bottom-right-radius:0;
-	*/
-}
 
 .selectbox-dropdown .selectbox-label {
     padding: 3px 5px 1px 0;
