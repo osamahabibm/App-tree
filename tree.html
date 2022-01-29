@@ -86,22 +86,43 @@
           <img src="img/2222.png" alt="" />
           <p>السبت 14 محرم 1439هج 3:37 م</p>
         </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="newsDetails.html">خبار الشجرة تطبيقي</a>
-            </div>
-            <div class="swiper-slide">اخبار الدولة</div>
-            <div class="swiper-slide">اخبار الحكومة</div>
-            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
-            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
-            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
-            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
-            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
-            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
-            <div class="swiper-slide">اخبار الشجرة تطبيقي</div>
+        <div class="news_block">
+          <div class="marquee-with-options" dir="ltr">
+            <span><a href="#"> المنفى صداقتي مع المنفى </a> * </span>
+            <span><a href="#"> المنفى صداقتي مع المنفى </a> * </span>
+            <span><a href="#"> المنفى صداقتي مع المنفى </a> * </span>
+            <span
+              ><a href="#">
+                صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع
+                المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي
+                مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى
+                صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع
+                المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي
+                مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى
+                صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع
+                المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي
+                مع المنفىصداقتي مع المنفى صداقتي مع المنفى صداقتي
+              </a>
+              *
+            </span>
+            <span
+              ><a href="#">
+                صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع
+                المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي
+                مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى
+                صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع
+                المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي
+                مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى
+                صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع
+                المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي مع المنفى صداقتي
+                مع المنفىصداقتي مع المنفى صداقتي مع المنفى صداقتي
+              </a>
+              *
+            </span>
           </div>
+          <!--marquee-->
         </div>
+
         <div class="in_tree_button">
           <h2 class="wide longtouch1" data-long-press-delay="500">
             <img src="img/man1.jpg" alt="" /> مولود جديد
@@ -505,7 +526,21 @@
     <!--side_bar-->
 
     <div class="md-overlay"></div>
-
+    <script src="js-tree/maequee.js"></script>
+    <script>
+      $(function () {
+        var $mwo = $(".marquee-with-options");
+        $(".marquee").marquee();
+        $(".marquee-with-options").marquee({
+          speed: 20000,
+          gap: 50,
+          delayBeforeStart: 0,
+          direction: "right",
+          duplicated: false,
+          pauseOnHover: true,
+        });
+      });
+    </script>
     <!-- <script>
       document.querySelectorAll(".demo-container .content").forEach((manu) => {
         manu.onclick = () => {
@@ -513,42 +548,6 @@
         };
       });
     </script> -->
-
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        autoplay: {
-          delay: 1000,
-          disableOnInteraction: true,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          // when window width is >= 320px
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          // when window width is >= 480px
-          480: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          // when window width is >= 640px
-          640: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-          },
-        },
-      });
-    </script>
 
     <!--  -->
     <!-- js-tree -->
@@ -619,7 +618,7 @@
         });
       };
     </script>
-    <script></script>
+
     <!-- <script>
       const buttons = document.querySelectorAll(".manun");
       const overlay = document.querySelector(".overlay");

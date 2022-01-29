@@ -1473,3 +1473,38 @@
      font-size: 50px;
      font-family: 'open_sansregular';
  }
+
+ /*  */
+
+ .news_block {
+     background: #f7ecda;
+     height: 40px;
+     margin-bottom: 20px;
+     overflow: hidden;
+     background: url(../img/battern_header.jpg);
+ }
+
+ .marquee-with-options * {
+     direction: rtl;
+ }
+
+ .marquee-with-options a {
+     padding: 0 10px;
+     font-size: 15px;
+     font-family: 'DINNextLTW23-Bold';
+     color: #fff;
+ }
+
+ .marquee-with-options span {
+     font-size: 16px;
+     line-height: 35px;
+     color: #fff;
+ }
+
+ .marquee,
+ .marquee-with-options,
+ .marquee-vert-before,
+ .marquee-vert {
+     width: 100%;
+     overflow: hidden;
+ }

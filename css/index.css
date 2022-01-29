@@ -1726,6 +1726,11 @@ tree
     color: #fff;
 }
 
+.swiper-slide {
+    width: fit-content !important;
+    margin-left: 30px !important;
+}
+
 .wide {
     margin: 10px;
     cursor: pointer;
